@@ -35,6 +35,14 @@ mkdir scene_splits
 * Download the scene splits into the "scene_splits" directory. The train-validation split is available <a href="https://github.com/RobertSamoilescu/UPB-Dataset-Split">here</a>.
 In the "scene_splits" directory you should have: "train_scenes.txt" and "test_scenes.txt".
 
+## Train
+
+* Train models using <a href='https://github.com/RobertSamoilescu/Steering-Network-2'>this repo</a>.
+```shell
+mkdir ckpts
+```
+* The trained models are in the snapshots folder (in the above repo). Copy the directories the snapshots folder to ckpts folder.
+
 
 ## Test - Closed-loop evaluation
 ```shell
