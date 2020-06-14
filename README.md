@@ -1,4 +1,20 @@
 # Steering-Evaluator-3
+<p align='center'>
+  <img src='sample/simulator.png' alt='pipeline'/>
+</p>
+
+<p align='center'>
+  <img src='sample/4cc9797ac787401c.gif' alt='simulation 1'/>
+</p>
+
+<p align='center'>
+  <img src='sample/6a2c87f4b0c346f3.gif' alt='simulation 2'/>
+</p>
+
+<p align='center'>
+  <img src='sample/26f1950c21de4ac6.gif' alt='simulation 3'/>
+</p>
+
 
 ## Pre-requisits
 ```shell
@@ -61,4 +77,14 @@ mkdir ckpts
 |ResNet18   | Yes   | No      | No    | 0.71| 204 | 0.0103    | 0.0583    | 4284.16 |
 |ResNet18   | Yes   | No      | Yes   | 0.70| 216 | 0.0111    | 0.0661    | 4356.16 |
 
-Closed-loop evaluation using 3D perspective augmentation over $3060.16$[s]. The model receives as input an RGB image, speed, disparity/depth map, and optical flow. Data balancing is applied during training. $Baseline_0$ corresponds to the model that always predicts $0^{\circ}$, and $Baseline_1$ corresponds to the $ResNet18$ model trained on the raw dataset without perspective augmentation or data balancing. Abbreviations: autonomy (A), number of interventions (NI), mean absolute distance (MAD), mean absolute angle (MAA), mean steps till intervention (MSTI), video length (VL), penalty(P). * means not applicable. 
+Closed-loop evaluation using 3D perspective augmentation over $3060.16$[s]. The model receives as input an RGB image, speed, disparity/depth map, and optical flow. Data balancing is applied during training. $Baseline_0$ corresponds to the model that always predicts $0^{\circ}$, and $Baseline_1$ corresponds to the $ResNet18$ model trained on the raw dataset without perspective augmentation or data balancing. Abbreviations: autonomy (A), number of interventions (NI), mean absolute distance (MAD), mean absolute angle (MAA), mean steps till intervention (MSTI), video length (VL), penalty(P). * means not applicable.
+
+
+## View intervention points
+```shell
+python3 view.py
+```
+
+<p align='center'>
+   <img src='sample/new_interventions.png' alt='intervention points'/>
+</p>
