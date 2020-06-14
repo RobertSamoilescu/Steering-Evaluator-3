@@ -4,15 +4,15 @@
 </p>
 
 <p align='center'>
-  <img src='sample/4cc9797ac787401c.gif' alt='simulation 1'/>
+  <img src='sample/4cc9797ac787401c.gif' alt='simulation 1' width=1024/>
 </p>
 
 <p align='center'>
-  <img src='sample/6a2c87f4b0c346f3.gif' alt='simulation 2'/>
+  <img src='sample/6a2c87f4b0c346f3.gif' alt='simulation 2' width=1024/>
 </p>
 
 <p align='center'>
-  <img src='sample/26f1950c21de4ac6.gif' alt='simulation 3'/>
+  <img src='sample/26f1950c21de4ac6.gif' alt='simulation 3' width=1024/>
 </p>
 
 
@@ -86,5 +86,5 @@ python3 view.py
 ```
 
 <p align='center'>
-   <img src='sample/new_interventions.png' alt='intervention points'/>
+   <img src='sample/new_interventions.png' alt='intervention points' width=512/>
 </p>
