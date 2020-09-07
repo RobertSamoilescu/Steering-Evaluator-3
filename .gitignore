@@ -1,0 +1,8 @@
+ckpts
+logs
+nohup.out
+pipeline/models
+print_logs
+raw_dataset
+split_scenes
+

@@ -55,13 +55,10 @@ class NVIDIA(nn.Module):
         )
 
         self.classifier = nn.Sequential(
-            nn.Linear(64 * 8 * 16 + (1 if self.use_speed else 0), 1024),
+            nn.Linear(64 * 8 * 16 + (1 if self.use_speed else 0), 64),
             nn.ReLU(),
             nn.Dropout(p=0.5),
-            nn.Linear(1024, 512),
-            nn.ReLU(),
-            nn.Dropout(p=0.5),
-            nn.Linear(512, self.no_outputs)
+            nn.Linear(64, self.no_outputs)
         )
 
 
