@@ -65,9 +65,8 @@ mkdir ckpts
 ./multiple_runs.sh
 ```
 
-
+<!--
 ## Results - Closed-loop evaluation
-
 |Model      |Disp   |Depth    |Flow   |A    |NI   |MAD/MSTI   |MAA/MSTI   |VL+P     |
 |-----------|-------|---------|-------|-----|-----|-----------|-----------|---------|
 |Baseline_0 | *     | *       | *     | 0.45| 620 | 0.0277    | 0.2390    | 6780.16 |
@@ -76,9 +75,8 @@ mkdir ckpts
 |ResNet18   | No    | Yes     | No    | 0.71| 211 | 0.0101    | 0.0631    | 4326.16 |
 |ResNet18   | Yes   | No      | No    | 0.71| 204 | 0.0103    | 0.0583    | 4284.16 |
 |ResNet18   | Yes   | No      | Yes   | 0.70| 216 | 0.0111    | 0.0661    | 4356.16 |
-
 Closed-loop evaluation using 3D perspective augmentation over $3060.16$[s]. The model receives as input an RGB image, speed, disparity/depth map, and optical flow. Data balancing is applied during training. $Baseline_0$ corresponds to the model that always predicts $0^{\circ}$, and $Baseline_1$ corresponds to the $ResNet18$ model trained on the raw dataset without perspective augmentation or data balancing. Abbreviations: autonomy (A), number of interventions (NI), mean absolute distance (MAD), mean absolute angle (MAA), mean steps till intervention (MSTI), video length (VL), penalty(P). * means not applicable.
-
+-->
 
 ## View intervention points
 ```shell
